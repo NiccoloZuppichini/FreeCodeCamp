@@ -1,0 +1,18 @@
+body{
+  /* bootstrap was overriding the css */
+  background-color: black !important;
+  font-style: "Times New Roman" !important;
+}
+
+
+#text{
+  margin: 5%;
+  padding: 5%;
+  background-color: gray
+}
+
+#container{
+  margin: 5%;
+  padding: 10%;
+  background-color: white;
+}
