@@ -1,0 +1,26 @@
+body{
+  font-family: Montserrat;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.Title{
+color: red;}
+
+button{
+  margin:10px;
+}
+
+.pomodoroDiv{
+  background-image: url(https://www.viridea.it/wp-content/uploads/2018/03/pomodoro_estivo.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  padding: 10%;
+}
+.pomodoroTimer{
+  margin: 10px;
+}
