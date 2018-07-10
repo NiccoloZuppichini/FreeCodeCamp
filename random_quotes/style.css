@@ -29,7 +29,8 @@ body{
 img{
   width: 50%;
   height: 50%;
-   max-width: 650px
+   max-width: 650px;
+   max-height: 300px;
 }
 
 button{

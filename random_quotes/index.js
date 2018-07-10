@@ -3,7 +3,7 @@ $(document).ready(function(){
 //get first random img
 get_img();
 
-var quotes = [];
+var quote;
 
 
 function get_img(keyword){
@@ -25,7 +25,8 @@ function get_img(keyword){
 function getRandomQuote(){
         $.getJSON("http://api.icndb.com/jokes/random?exclude=[explicit]",
         function(json) {
-          $("#text").html((json.value.joke));
+          quote = json.value.joke;
+          $("#text").html((quote));
 });
 }
 
@@ -37,4 +38,10 @@ $("#btn").on("click", ()=>{
   get_img('chuck norris');
   getRandomQuote();
 })
+
+
+$("#tweet").on("click", ()=>{
+  window.open("http://twitter.com/intent/tweet?=" + quote + " -RandomChuckNorrisQuotes")}
+
+)
 });
