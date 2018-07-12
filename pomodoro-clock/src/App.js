@@ -46,7 +46,7 @@ class App extends Component {
 
   sub_relax(amount){
     let previous = this.state.relax_min
-    this.setState(previousState=>{
+    this.setState(prevState=>{
         console.log(this.state)
 
       return{ relax_min : previous - amount}
@@ -55,6 +55,17 @@ class App extends Component {
 
   reset_state(){
     this.setState(initialState)
+  }
+
+  startTimer(){
+    setInterval(()=>{
+      this.setState(prevState=>{
+        console.log(prevState)
+
+      return{work_min : prevState.work_min - 1}
+     })
+   }, 60000)
+   //1 minute interval
   }
 
   render() {
@@ -78,10 +89,10 @@ class App extends Component {
 
       <div className = "pomodoroTimer">
       {this.state.work_min} and {this.state.relax_min}
-      
+
       </div>
 
-      <Button bsStyle="primary" bsSize="large"> Start</Button>
+      <Button bsStyle="primary" bsSize="large" onClick={()=>{this.startTimer()}}> Start</Button>
       </div>
 
       </div>
