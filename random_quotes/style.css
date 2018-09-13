@@ -1,0 +1,38 @@
+body{
+  /* bootstrap was overriding the css */
+  background-color: black !important;
+  font-style: "Times New Roman" !important;
+}
+
+
+#text{
+  margin: 5%;
+  padding: 5%;
+  background-color: gray
+}
+
+#container{
+  margin: 5%;
+  padding: 10%;
+  background-color: white;
+
+}
+
+#description{
+  padding: 10px;
+}
+
+#quotes{
+  display: flex;
+}
+
+img{
+  width: 50%;
+  height: 50%;
+   max-width: 650px;
+   max-height: 300px;
+}
+
+button{
+  margin: 15px !important;
+}
